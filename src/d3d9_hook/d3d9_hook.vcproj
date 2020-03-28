@@ -401,10 +401,6 @@
 				>
 			</File>
 			<File
-				RelativePath=".\OVRManager.cpp"
-				>
-			</File>
-			<File
 				RelativePath=".\RenderProfiler.cpp"
 				>
 			</File>

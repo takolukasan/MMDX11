@@ -165,24 +165,7 @@ DWORD WINAPI MainProc(LPVOID lpParameter)
 					// SetOVRWindowTitleSuffix(tcFPSBuffer);
 					g_nOVRFPS = -1;
 				}
-#ifdef _DEBUG
-				/* ë±ÇØÇƒâ…Ç»éûèàóù */
-				HMODULE hModMMotion;
-				typedef void (__stdcall * tSetHeadPoint)(D3DXVECTOR3 *);
-				tSetHeadPoint pFunc;
-				D3DXVECTOR3 vecHead;
 
-				hModMMotion = GetModuleHandle(TEXT("DxOpenNI.DLL"));
-				if( hModMMotion ) {
-					pFunc = (tSetHeadPoint)GetProcAddress(hModMMotion, "_MMMotionControl_SetHeadPoint@4");
-					if( pFunc ) {
-						vecHead.x = g_RiftLastPose[OVR_EYE_LEFT].Position.x * -5;
-						vecHead.y = g_RiftLastPose[OVR_EYE_LEFT].Position.y * 1;
-						vecHead.z = g_RiftLastPose[OVR_EYE_LEFT].Position.z * 5;
-						pFunc(&vecHead);
-					}
-				}
-#endif
 			}
 			else {
 				if( bOVRInitialized ) {

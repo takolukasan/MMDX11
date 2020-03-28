@@ -13,7 +13,7 @@
 
 #define MIRROR_RENDER
 
-// #define D3D9EX_ENABLE
+#define D3D9EX_ENABLE
 
 #ifdef D3D9EX_ENABLE
 // #define OVR_ENABLE
