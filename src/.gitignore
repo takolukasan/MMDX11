@@ -42,6 +42,7 @@
 # VC++ Compiled Object files
 *.ilk
 *.intermediate.manifest
+*.embed.manifest
 BuildLog.htm
 mt.dep
 
