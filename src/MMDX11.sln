@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MikuMikuVR", "d3d9_hook\d3d9_hook.vcproj", "{F77B9C61-B205-4B0A-B122-803E87101849}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MMDX11", "d3d9_hook\d3d9_hook.vcproj", "{F77B9C61-B205-4B0A-B122-803E87101849}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MikuMikuVREXE", "MikuMikuVREXE\MikuMikuVREXE.vcproj", "{93483207-671B-4128-95BB-812BBC3072CA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MMDX11EXE", "MMDX11EXE\MMDX11EXE.vcproj", "{93483207-671B-4128-95BB-812BBC3072CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -50,3 +50,7 @@ mt.dep
 *.vcproj.*.user
 *.ncb
 *.suo
+
+# MMD Debug
+MMDX11EXE/Data/*
+MMDX11EXE/MMEffect.ini
