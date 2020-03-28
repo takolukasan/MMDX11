@@ -148,9 +148,10 @@ private:
 	/* Direct3D9 インターフェース */
 	IDirect3DSwapChain9 *pSwapChainMME;
 
+#ifdef OVR_ENABLE
 	D3DXMATRIX matEyeView[OVR_EYE_NUM];
 	D3DXMATRIX matProjection[OVR_EYE_NUM];
-
+#endif
 
 public:
 	CHookIDirect3DDevice9MME(::IDirect3DDevice9 *pDevice);
@@ -165,12 +166,14 @@ public:
     virtual HRESULT STDMETHODCALLTYPE EndScene();
     virtual HRESULT STDMETHODCALLTYPE Present(CONST RECT* pSourceRect,CONST RECT* pDestRect,HWND hDestWindowOverride,CONST RGNDATA* pDirtyRegion);
 
+#ifdef OVR_ENABLE
 	const D3DXMATRIX * GetEyeViewMatrix(ovrEyeType eye) {
 		return &this->matEyeView[eye];
 	}
 	const D3DXMATRIX * GetProjectionMatrix(ovrEyeType eye) {
 		return &this->matProjection[eye];
 	}
+#endif
 
 };
 

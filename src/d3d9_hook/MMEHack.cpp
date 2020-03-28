@@ -554,6 +554,7 @@ HRESULT	STDMETHODCALLTYPE CHookIDirect3DDevice9MME::BeginScene()
 
 	hr = this->pOriginal->BeginScene();
 
+#ifdef OVR_ENABLE
 	if( g_pRift ) {
 		/* ‚±‚±‚Å‚¢‚¢HH */
 		D3DXMATRIX matHeadMove,matRotateYAxis,matHeadMovRot;
@@ -586,6 +587,7 @@ HRESULT	STDMETHODCALLTYPE CHookIDirect3DDevice9MME::BeginScene()
 		this->matProjection[OVR_EYE_LEFT] = matProj[OVR_EYE_LEFT];
 		this->matProjection[OVR_EYE_RIGHT] = matProj[OVR_EYE_RIGHT];
 	}
+#endif
 	return hr;
 }
 

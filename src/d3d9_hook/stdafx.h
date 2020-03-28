@@ -13,10 +13,10 @@
 
 #define MIRROR_RENDER
 
-#define D3D9EX_ENABLE
+// #define D3D9EX_ENABLE
 
 #ifdef D3D9EX_ENABLE
-#define OVR_ENABLE
+// #define OVR_ENABLE
 #endif
 
 
@@ -40,11 +40,9 @@ void PrintConsole(const char *szString, const char *szString2);
 #include <d3dx9.h>
 #include <d3dx9math.inl>
 
-#ifdef OVR_ENABLE
 #include <dxgi.h>
 #include <d3d11.h>
 #include <d3dx11.h>
-#endif
 
 #include <xnamath.h>
 

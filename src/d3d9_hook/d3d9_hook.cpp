@@ -240,12 +240,6 @@ DWORD WINAPI MainProc(LPVOID lpParameter)
 
 static void CleanupD3DHookResources()
 {
-	int i;
-	for(i = 0; i < OVR_EYE_NUM; i++) {
-		RELEASE(g_pEyeTex[i]);
-		RELEASE(g_pEyeSurf[i]);
-	}
-
 	RELEASE(g_pPrimaryBackBuffer);
 	RELEASE(g_pPrimaryDepthStencil);
 }

@@ -125,6 +125,7 @@ static LRESULT CALLBACK WndProc( HWND hWnd, UINT message, WPARAM wParam, LPARAM 
 
 		case WM_MMVR_EFFECTLOADED:
 			{
+#ifdef OVR_ENABLE
 				ovrHmdDesc hmdDesc;
 				g_pRift->GetOvrHmdDesc(&hmdDesc);
 				if( g_pMMEHookMirrorRT->GetTargetHmdType() != hmdDesc.Type) {
@@ -133,6 +134,7 @@ static LRESULT CALLBACK WndProc( HWND hWnd, UINT message, WPARAM wParam, LPARAM 
 					StringCchCat(tWindowTitle, sizeof(tWindowTitle), TEXT(" | Warning: ") TEXT(MMEHACK_EFFECT_RENDERTARGET) TEXT(" HMD type unmatch."));
 					SetWindowText(g_hWnd, tWindowTitle);
 				}
+#endif
 			}
 			break;
 		case WM_MMVR_EFFECTUNLOADED:

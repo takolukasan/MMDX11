@@ -2,6 +2,7 @@
 #define _D3D9_HOOK_H
 
 
+#define nullptr (0) /* —Ç‚¢Žq‚Í‚±‚ñ‚È’è‹`—Ç‚­‚È‚¢‚¼1 */
 
 #define RELEASE(p) if(p) { (p)->Release(); (p) = nullptr; }
 
