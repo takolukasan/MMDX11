@@ -1,0 +1,51 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# VC++ compiled resource
+*.res
+*.aps
+
+# VC++ debug information objects
+*.idb
+*.pdb
+
+# VC++ Compiled Object files
+*.ilk
+*.intermediate.manifest
+BuildLog.htm
+mt.dep
+
+# VC++ project temporary files
+*.vcproj.*.user
+*.ncb
+*.suo
