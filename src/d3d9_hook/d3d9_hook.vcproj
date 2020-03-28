@@ -48,7 +48,7 @@
 				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_USRDLL;D3D9_HOOK_EXPORTS"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
-				RuntimeLibrary="3"
+				RuntimeLibrary="1"
 				UsePrecompiledHeader="2"
 				WarningLevel="3"
 				DebugInformationFormat="4"
@@ -64,8 +64,8 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="imagehlp.lib ws2_32.lib winmm.lib d3d9.lib d3d11.lib d3d10_1.lib d3dx11d.lib &quot;F:\Program Files (x86)\Microsoft DirectX SDK (December 2006)\Lib\x86\d3dx9d.lib&quot; dxguid.lib dxgi.lib d2d1.lib"
-				OutputFile="$(OutDir)\..\MikuMikuVREXE\$(ProjectName).dll"
+				AdditionalDependencies="imagehlp.lib ws2_32.lib winmm.lib d3d9.lib d3d11.lib d3d10_1.lib d3dx11d.lib d3dx9d.lib dxguid.lib dxgi.lib d2d1.lib"
+				OutputFile="$(OutDir)\..\MMDX11EXE$(ProjectName).dll"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="MMDExport"
 				GenerateDebugInformation="true"
@@ -141,7 +141,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="imagehlp.lib ws2_32.lib winmm.lib d3d9.lib d3d11.lib d3dx11d.lib d3dx9d.lib dxguid.lib dxgi.lib d2d1.lib"
-				OutputFile="$(ProjectDir)\..\MikuMikuVREXE\x64\$(ProjectName).dll"
+				OutputFile="$(ProjectDir)\..\MMDX11EXE\x64\$(ProjectName).dll"
 				LinkIncremental="2"
 				AdditionalLibraryDirectories="MMDExport"
 				GenerateDebugInformation="true"
@@ -199,7 +199,7 @@
 				EnableIntrinsicFunctions="true"
 				AdditionalIncludeDirectories="OculusRift;OculusRift\LibOVR\Include;OculusRift\LibOVRKernel\Src"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_USRDLL;D3D9_HOOK_EXPORTS"
-				RuntimeLibrary="2"
+				RuntimeLibrary="0"
 				EnableFunctionLevelLinking="true"
 				UsePrecompiledHeader="2"
 				WarningLevel="3"
@@ -217,7 +217,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="imagehlp.lib ws2_32.lib winmm.lib d3d9.lib d3d11.lib D3DX11.lib &quot;F:\Program Files (x86)\Microsoft DirectX SDK (December 2006)\Lib\x86\d3dx9.lib&quot; dxguid.lib"
-				OutputFile="$(OutDir)\..\MikuMikuVREXE\$(ProjectName).dll"
+				OutputFile="$(OutDir)\..\MMDX11EXE$(ProjectName).dll"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="MMDExport"
 				GenerateDebugInformation="true"
@@ -296,7 +296,7 @@
 			<Tool
 				Name="VCLinkerTool"
 				AdditionalDependencies="imagehlp.lib ws2_32.lib winmm.lib d3d9.lib d3d11.lib d3dx9.lib D3DX11.lib dxguid.lib"
-				OutputFile="$(ProjectDir)\..\MikuMikuVREXE\x64\$(ProjectName).dll"
+				OutputFile="$(ProjectDir)\..\MMDX11EXE\x64\$(ProjectName).dll"
 				LinkIncremental="1"
 				AdditionalLibraryDirectories="MMDExport"
 				GenerateDebugInformation="true"
