@@ -54,3 +54,4 @@ mt.dep
 # MMD Debug
 MMDX11EXE/Data/*
 MMDX11EXE/MMEffect.ini
+MMDX11EXE/Microsoft.VC90.DebugCRT.manifest
